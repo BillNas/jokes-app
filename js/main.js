@@ -4,7 +4,7 @@ function getJoke(){
     axios.get(`https://sv443.net/jokeapi/category/${category}`)
         .then(response => {
             showJokes(response.data);
-            console.log(response.data)
+    
         })
         .catch(err => console.log(err));
 }
