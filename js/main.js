@@ -3,11 +3,11 @@ function getJoke(){
 
     axios.get(`https://sv443.net/jokeapi/category/${category}`)
         .then(response => {
-            showJokes(response.data);
+            showJoke(response.data);
         })
         .catch(err => console.log(err));
 }
-function showJokes(joke){
+function showJoke(joke){
     const results = document.querySelector('#results');
     results.innerHTML = '';
    
